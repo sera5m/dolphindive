@@ -1,0 +1,11 @@
+[Unit]
+Description=DolphinDive helper (optional; overlay is launched by shortcut)
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

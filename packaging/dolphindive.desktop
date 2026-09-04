@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=DolphinDive
+Comment=Listary-style file search for Dolphin
+Exec=dive overlay
+Icon=system-search
+Terminal=false
+Categories=Utility;FileManager;KDE;
+StartupNotify=false
+X-KDE-Shortcuts=Alt+F
+X-KDE-GlobalAccel-CommandExecute=true
