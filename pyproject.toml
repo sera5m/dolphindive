@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dolphindive"
+version = "0.1.0"
+description = "Listary-like composite file search for KDE Dolphin / Plasma 6"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "GPL-2.0-or-later"}
+authors = [{name = "sera5m"}]
+dependencies = []
+
+[project.optional-dependencies]
+qt = ["PyQt6"]
+dev = ["pytest"]
+
+[project.scripts]
+dive = "dolphindive.app.cli:main"
+dolphindive = "dolphindive.app.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dolphindive*"]
